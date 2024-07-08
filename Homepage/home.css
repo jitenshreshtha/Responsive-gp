@@ -58,14 +58,66 @@
   width: 100%;
   height: 25em;
   margin:5px auto;
-  position: relative;
+  padding: 5px;
   box-shadow: 0px 0px 5px black;
 }
 
-.offerList img{
-  width: 99%;
+.offer img{
+  width: 100%;
   height: 100%;
   margin: auto;
-  position: absolute;
   object-fit: cover;
+}
+.special{
+  width: 100%;
+  height: 10em;
+  display: flex;
+  /* background-color: red; */
+}
+.chefSpecial{
+  width: 50%;
+  padding: 5px;
+}
+.chefSpecial img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.todaySpecial{
+  padding: 5px;
+  width: 50%;
+}
+.todaySpecial img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+}
+.menuItems{
+  width: 10em;
+  height: 22em;
+  margin: 5px;
+  /* background-color: yellow; */
+}
+.menuItems img{
+  width: 100%;
+  height: 60%;
+  padding: 5px;
+  border-radius: 1em;
+}
+.menuDescription{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+}
+footer{
+  width: 100%;
+  height: 10em;
+  background-color: aqua;
 }
