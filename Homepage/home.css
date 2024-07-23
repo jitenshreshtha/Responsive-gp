@@ -1,123 +1,150 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-.header{
- display: flex;
- align-items: center;
- position: relative;
- box-shadow: 0px 2px 5px rgb(211, 208, 208);
- /* background-color: red; */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans',sans-serif;
 }
-.header img{
-  max-width:6em;
-  padding: 10px;
-  border-radius: 4em;
-  flex: 2;
-}
-.header a{
-  text-decoration: none;
-}
-.heading{
-  top: 35%;
-  right: 40%;
-  position: absolute;
-  color: black;
-  transition:border-bottom 5s;
-}
-.heading:hover{
-  border-bottom: 1px solid black;
-  transition: inherit;
-}
-.navBar{
-  /* background-color: green; */
-  
-}
-.navLinks{
+.headerContainer{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  /* background-color: purple; */
+  padding: 1rem;
 }
-.navLinks li{
-  padding: 1em;
+.logoContainer{
+  flex: 1;
+  /* background-color: aqua; */
+}
+.logoContainer img{
+  margin-left: 4em;
+  width: 3em;
+  height: 3em;
+  cursor: pointer;
+}
+.linksContainer{
+  flex: 2;
+  /* background-color: antiquewhite; */
+}
+.links{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
   list-style-type: none;
 }
-.navLinks li:hover{
-  border-bottom: 2px solid black;
-  transform: scale(1.1);
+.links li{
+  /* background-color: azure; */
+  padding: 1rem;
+  cursor: pointer;
 }
-.navLinks a{
-  font-weight: bold;
-  font-size: 1.2em;
-  color: black;
-  text-decoration: none;
+.links li:hover{
+  background-color: rgb(182, 182, 182);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px black;
+  /* background-color: red; */
 }
-.offer{
-  width: 100%;
-  height: 25em;
-  margin:5px auto;
-  padding: 5px;
+.loginLinks{
+  flex: 0.75;
+}
+.loginContainer{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.loginContainer li{
+  padding: 1rem;
+  /* background-color: brown; */
+  cursor: pointer;
+}
+.loginContainer li:hover{
+  /* background-color: aqua; */
+  background-color: rgb(182, 182, 182);
+  border-radius: 10px;
   box-shadow: 0px 0px 5px black;
 }
 
-.offer img{
+
+
+.topbarContainer{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ /* background-color: red; */
+}
+.menuContainer{
+  font-size: 1.4em;
+  cursor: pointer;
+}
+/* .menuOptions{
+  display: none;
+  margin-top: 100px;
+} */
+.searchContainer{
+  margin-left: 2em;
+  width: 80%;
+}
+.searchBox{
+  width: 100%;
+  border-radius: 7px;
+  padding: 0.6em;
+}
+.searchIcon{
+  position: absolute;
+  margin-left: -30px;
+  margin-top: 9px;
+  font-size: 1.2em;
+}
+.offerSection{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50% 50%;
+  gap: 10px;
+  padding: 1em;
+}
+.mainOffer{
+  grid-row: 1/ span 2;
+  background-color: blue;
   width: 100%;
   height: 100%;
-  margin: auto;
-  object-fit: cover;
 }
-.special{
-  width: 100%;
-  height: 10em;
-  display: flex;
-  /* background-color: red; */
-}
-.chefSpecial{
-  width: 50%;
-  padding: 5px;
-}
-.chefSpecial img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.todaySpecial{
-  padding: 5px;
-  width: 50%;
-}
-.todaySpecial img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.menu{
-  display: flex;
-  flex-wrap: wrap;
-}
-.menuItems{
-  width: 10em;
-  height: 22em;
-  margin: 5px;
-  /* background-color: yellow; */
-}
-.menuItems img{
-  width: 100%;
-  height: 60%;
-  padding: 5px;
-  border-radius: 1em;
-}
-.menuDescription{
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  width: 100%;
-  padding: 5px;
+.offer2{
+  background-color: blue;
+  color: white;
   text-align: center;
 }
-footer{
+.mainOffer img{
+  width: 100px;
+  height: 100px;
+}
+.arrivalContainer{
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px dashed black;
+}
+.arrivalHeading{
+  margin: 10px 0;
+}
+.newarrivalContainer{  
+  display: flex;
+  gap: 10px;
+}
+.newArrival{
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+  text-align: center;
+}
+.newArrival img{
   width: 100%;
-  height: 10em;
-  background-color: aqua;
+  height: 50%;
+  margin: auto;
+  border-radius: 10px 10px 0 0; 
+}
+footer{
+  display: flex;
+  gap: 10px;
+  width: 100%;
 }
